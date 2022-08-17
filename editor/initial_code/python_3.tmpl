@@ -2,19 +2,19 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def sum_two(a: int, b: int) -> int:
+def сonv_aggr(data: list[tuple[str, int]]) -> dict[str, int]:
     # your code here
-    return None
+    return {}
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(sum_two(1, 2))
+print(сonv_aggr([('a', 7), ('b', 8), ('a', 10)]))
 {% endblock %}
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}sum_two({{t.input|p_args}})
+assert {% block call %}сonv_aggr({{t.input|p_args}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 
