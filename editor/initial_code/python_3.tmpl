@@ -14,7 +14,7 @@ print(сonv_aggr([('a', 7), ('b', 8), ('a', 10)]))
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}сonv_aggr({{t.input|p_args}})
+assert {% block call %}conv_aggr({{t.input|p_args}})
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 

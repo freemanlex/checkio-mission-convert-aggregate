@@ -1,6 +1,6 @@
 <!-- Describe task in general -->
 <p>
-    You are given a sequence of tuples. Each tuple consists of two values: a string
+    You are given {% if is_js %}an Array{% else %}a list{% endif %} of tuples. Each tuple consists of two values: a string
     and {% if is_js %}a number{% else %}an integer{% endif %}.
     You need to create and return {% if is_js %}an Object{% else %}a dictionary{% endif %},
     where keys are string values from input tuples and values are aggregated (summed) {% if is_js %}number{% else %}integer{% endif %}
@@ -14,7 +14,7 @@
 </p>
 
 <p>
-    <strong>Output:</strong> {% if is_js %}Object{% else %}dictionary{% endif %}. 
+    <strong>Output:</strong> {% if is_js %}Object{% else %}Dictionary{% endif %}. 
 </p>
 
 
