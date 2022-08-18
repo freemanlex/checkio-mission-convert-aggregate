@@ -1,40 +1,26 @@
 <!-- Describe task in general -->
-
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    You are given a sequence of tuples. Each tuple consists of two values: a string
+    and {% if interpreter.slug == "js-node" %}a number{% else %}an integer{% endif %}.
+    You need to create and return {% if interpreter.slug == "js-node" %}an Object{% else %}a dictionary{% endif %},
+    where keys are string values from input tuples and values are aggregated (summed) {% if interpreter.slug == "js-node" %}number{% else %}integer{% endif %}
+    values from input tuples for each specific key. The resulted {% if interpreter.slug == "js-node" %}Object{% else %}dictionary{% endif %}
+    should not include items with empty key or zero value.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input:</strong> {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %} of tuples.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output:</strong> {% if interpreter.slug == "js-node" %}Object{% else %}Dictionary{% endif %}. 
 </p>
 
 
 <p>
-    <strong>Example:</strong>
+    <strong>Examples:</strong>
 </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
-</p>
