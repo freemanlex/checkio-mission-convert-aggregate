@@ -11,45 +11,45 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [[('a', 7), ('b', 8), ('a', 10)]],
-            "answer": {'a': 17, 'b': 8}
+            "input": [[("a", 7), ("b", 8), ("a", 10)]],
+            "answer": {"a": 17, "b": 8}
         },
         {
             "input": [[]],
             "answer": {}
         },
         {
-            "input": [[('a', 5), ('a', -5)]],
+            "input": [[("a", 5), ("a", -5)]],
             "answer": {},
             "explanation": "zero-valued key"
         },
         {
-            "input": [[('a', 5), ('a', 5), ('a', 0)]],
-            "answer": {'a': 10}
+            "input": [[("a", 5), ("a", 5), ("a", 0)]],
+            "answer": {"a": 10}
         },
         {
-            "input": [[('a', 5), ('', 15)]],
-            "answer": {'a': 5},
+            "input": [[("a", 5), ("", 15)]],
+            "answer": {"a": 5},
             "explanation": "unknown key"
         }
     ],
     "Extra": [
         {
-            "input": [[('a', 0), ('b', 0), ('', 35)]],
+            "input": [[("a", 0), ("b", 0), ("", 35)]],
             "answer": {},
             "explanation": "zero-valued keys + unknown key"
         },
         {
-            "input": [[('', 0)]],
+            "input": [[("", 0)]],
             "answer": {}
         },
         {
-            "input": [[('a', -5), ('', -20), ('a', -20)]],
-            "answer": {'a': -25}
+            "input": [[("a", -5), ("", -20), ("a", -20)]],
+            "answer": {"a": -25}
         },
         {
-            "input": [[('a', -5), ('aa', -20), ('aaa', -20)]],
-            "answer": {'a': -5, 'aa': -20, 'aaa': -20}
+            "input": [[("a", -5), ("aa", -20), ("aaa", -20)]],
+            "answer": {"a": -5, "aa": -20, "aaa": -20}
         }
     ]
 }
