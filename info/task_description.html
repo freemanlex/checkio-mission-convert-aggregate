@@ -1,20 +1,20 @@
 <!-- Describe task in general -->
 <p>
     You are given a sequence of tuples. Each tuple consists of two values: a string
-    and {% if interpreter.slug == "js-node" %}a number{% else %}an integer{% endif %}.
-    You need to create and return {% if interpreter.slug == "js-node" %}an Object{% else %}a dictionary{% endif %},
-    where keys are string values from input tuples and values are aggregated (summed) {% if interpreter.slug == "js-node" %}number{% else %}integer{% endif %}
-    values from input tuples for each specific key. The resulted {% if interpreter.slug == "js-node" %}Object{% else %}dictionary{% endif %}
+    and {% if is_js %}a number{% else %}an integer{% endif %}.
+    You need to create and return {% if is_js %}an Object{% else %}a dictionary{% endif %},
+    where keys are string values from input tuples and values are aggregated (summed) {% if is_js %}number{% else %}integer{% endif %}
+    values from input tuples for each specific key. The resulted {% if is_js %}Object{% else %}dictionary{% endif %}
     should not include items with empty key or zero value.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %} of tuples.
+    <strong>Input:</strong> {% if is_js %}Array{% else %}List{% endif %} of tuples.
 </p>
 
 <p>
-    <strong>Output:</strong> {% if interpreter.slug == "js-node" %}Object{% else %}Dictionary{% endif %}. 
+    <strong>Output:</strong> {% if is_js %}Object{% else %}dictionary{% endif %}. 
 </p>
 
 
